@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--This tells the browser that the document is written in HTML5-->
+<html lang="en">
+    <!--This tells that the content is in English-->
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            About Us
+        </title>
+        <!--Linking external CSS file using relative path-->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <!--Header section starts-->
+        <div class="header">
+            <div class="logo">
+                <img src="../images/Logo.png" alt="Ecoza Logo">
+                Ecoza
+            </div>
+            <!--Navigation menu-->
+            <div class="nav">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="product.html">
+                    Products
+                </a>
+                <a href="blog.html">
+                    Blog
+                </a>
+                <a href="research.html">
+                    Research
+                </a>
+                <a href="aboutus.html">
+                    About Us
+                </a>
+            </div>
+            <!--Search bar and cart icon area-->
+            <div class="header-icons">
+                <!--Search box-->
+                <input type="text" id="searchInput" placeholder="Search Products...">
+                <button onclick="searchProducts()">
+                    Search 
+                </button>
+                <!--Cart icon-->
+               <a href="cart.html">
+                <img src="../images/cart-icon.png" alt="Cart" width="24">
+                </a>
+            </div>
+        </div>
+        <!--Header section ends-->
+
+        <!--About Us page heading-->
+        <div class="main-content compact-header">
+            <h1>
+                About Us
+            </h1>
+
+            <p class="subheading">
+                Learn more about our team and share your feedback with us
+            </p>
+        </div>
+        <!--About Us page heading ends-->
+
+        <!--Team portfolio section starts-->
+        <div class="info-section">
+            <h2>
+                Our Team 
+            </h2>
+            <div class="image-section">
+                <div class="team-member">
+                    <img src="../images/Team member-1.png" alt="Jenisha Poudel">
+                    <p class="team-name">
+                        Jenisha Poudel 
+                    </p>
+                    <p class="profile-link" onclick="alert('Name: Jenisha Poudel\nAddress: Birauta,Pokhara-17\nEducation: BSc(Hons) Computing in Informatics College Pokhara\nSkill: HTML, CSS, JS')">
+                        View Profile
+                    </p>
+                </div>
+     
+                <div class="team-member">
+                    <img src="../images/Team member-2.png" alt="Yeshmi Darai">
+                    <p class="team-name">
+                        Yeshmi Darai 
+                    </p>
+                    <p class="profile-link" onclick="alert('Name: Yeshmi Darai\nAddress: Masbar,Pokhara-7\nEducation: BSc(Hons) Computing in Informatics College Pokhara\nSkill: HTML, CSS, JS')">
+                        View Profile
+                    </p>
+                </div>
+
+                <div class="team-member">
+                    <img src="../images/Team member-3.png" alt="Prithak Gurung">
+                    <p class="team-name">
+                        Prithak Gurung
+                    </p>
+                    <p class="profile-link" onclick="alert('Name: Prithak Gurung\nAddress: Chipledhunga\nEducation: BSc(Hons) Computing in Informatics College Pokhara\nSkill: HTML, CSS, JS')">
+                        View Profile
+                    </p>
+                </div>
+
+                <div class="team-member">
+                    <img src="../images/Team member-4.png" alt="Sparsh Baral"> 
+                    <p class="team-name">
+                        Sparsh Baral
+                    </p>
+                    <p class="profile-link" onclick="alert('Name: Sparsh Baral\nAddress: Nadipur\nEducation: BSc(Hons) Computing in Informatics College Pokhara\nSkill: HTML, CSS, JS')">
+                        View Profile
+                    </p>
+                </div>
+
+                <div class="team-member">
+                    <img src="../images/Team member-5.png" alt="Nobel Koirala">
+                    <p class="team-name">
+                        Nobel Koirala
+                    </p>
+                    <p class="profile-link" onclick="alert('Name: Nobel Koirala\nAddress: New Road\nEducation: BSc(Hons) Computing in Informatics College Pokhara\nSkill: HTML, CSS, JS')">
+                        View Profile
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!--Team portfolio section ends-->
+
+       <!--Feedback form section starts-->
+       <div class="info-section">
+        <!--Inline CSS-->
+        <h2 style="text-align: center;">
+            Feedback Form 
+        </h2>
+
+        <div class="feedback-wrapper">
+            <form id="feedbackForm" class="feedbackForm">
+
+                <div class="form-group">
+                    <label>
+                        Name 
+                    </label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label>
+                        Email  
+                    </label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label>
+                        Message  
+                    </label>
+                    <textarea type="text" id="message" placeholder="Give your feedback here">
+
+                    </textarea>
+                </div>
+                <button type="submit">
+                    Submit Feedback 
+                </button>
+            </form>
+        </div>
+       </div>
+       <!--Feedback form section ends-->
+
+       <!--Additional information section-->
+       <div class="info-section">
+        <h2>
+            Additional Information 
+        </h2>
+        <p>
+            This section can be used to share more details about the store, values, or future goals.
+        </p>
+       </div>
+       <!--Additional information section ends-->
+
+       <!--Footer section starts-->
+        <div class="footer">
+           <!--Footer menu areas--> 
+           <div class="footer-section">
+            <strong>
+                Contact Info 
+            </strong>
+            <p>
+                Email: support@ecoza.com
+            </p>
+            <p>
+                Phone: +977-XXXXXXXXXX
+            </p>
+           </div>
+           <div class="footer-section">
+            <strong>
+                Quick Links
+            </strong>
+            <p>
+                <a href="index.html">
+                    Home
+                </a><br>
+                <a href="product.html">
+                    Products
+                </a><br>
+                <a href="blog.html">
+                    Blog Section
+                </a><br>
+                <a href="research.html">
+                    Research
+                </a><br>
+                <a href="aboutus.html">
+                    About Us
+                </a><br>
+                <a href="cart.html">
+                    MyCart
+                </a><br>
+            </p>
+           </div>
+           <div class="footer-section">
+            <strong>
+                Social Media 
+            </strong>
+            <p>
+                 📘 Facebook   
+            </p>
+            <p>
+                 📸  Instagram     
+            </p>
+            <p>
+                 🐦 Twitter 
+            </p>
+           </div>
+           <div class="footer-section">
+            Copyright <br> © 2026 Ecoza. All rights reserved. 
+           </div>
+        </div>
+        <!--Footer section ends-->
+
+        <!--Linking JS to HTML-->
+        <script src="../js/script.js">
+
+        </script>
+
+    </body>
+</html>

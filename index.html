@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--This tells the browser that the document is written in HTML5-->
+<html lang="en">
+    <!--This tells that the content is in English-->
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Home
+        </title>
+        <link rel="stylesheet" href="../css/style.css">
+        <!--Internal CSS for homepage-specific styling-->
+        <style>
+           /* Main heading styling (homepage only) */ 
+           h1{
+            color: #2e7d32;
+           }
+        </style>
+    </head>
+    <body>
+        <!--Header section starts-->
+        <div class="header">
+            <div class="logo">
+                <img src="../images/Logo.png" alt="Ecoza Logo">
+                Ecoza
+            </div>
+            <!--Navigation menu-->
+            <div class="nav">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="product.html">
+                    Products
+                </a>
+                <a href="blog.html">
+                    Blog
+                </a>
+                <a href="research.html">
+                    Research
+                </a>
+                <a href="aboutus.html">
+                    About Us
+                </a>
+            </div>
+            <!--Search bar and cart icon area-->
+            <div class="header-icons">
+                <!--Search box-->
+                <input type="text" id="searchInput" placeholder="Search Products...">
+                <button onclick="searchProducts()">
+                    Search 
+                </button>
+                <!--Cart icon-->
+                <a href="cart.html">
+                <img src="../images/cart-icon.png" alt="Cart" width="24">
+                </a>
+            </div>
+        </div>
+        <!--Header section ends-->
+
+        <!--Main content section starts-->
+        <div class="main-content">
+            <!--Main heading area-->
+            <h1>
+               Sustainable Products for a Better Tomorrow
+            </h1>
+            <!--This heading represents the main message of the website-->
+
+            <button class="curiosity-text" onclick="welcomePopup()" style="cursor: pointer; color: #2e7d32; font-weight: bold;">
+                👀 Curious? ✨ Pop this
+            </button>
+
+            <!--Internal JavaScript for homepage welcome message-->
+            <script>
+                //Displays a creative welcome message tot he user
+                function welcomePopup(){
+                    alert("🌱 Every eco-friendly choice starts with curiosity.\nThanks for taking the first step with Ecoza!")
+                }
+            </script>
+
+            <!--Subheading area-->
+            <div class="subheading-box">
+                A simple online store promoting eco-friendly and sustainable daily-use products
+            </div>
+            <!--Short description under the main heading-->
+        </div>
+        <!--Main content section ends-->
+
+        <!--Product preview section starts-->
+        <div class="image-section">
+            <div class="image-box">
+                <!--Product image placeholder-->
+                <img src="../images/Eco bottle.png" 
+                alt="Eco-friendly product"
+                width="100">
+            </div>
+            <div class="image-box">
+                <!--Product image placeholder-->
+                <img src="../images/Bamboo brush.png" 
+                alt="Eco-friendly product"
+                width="100">
+            </div>
+            <div class="image-box">
+                <!--Product image placeholder-->
+                <img src="../images/Reusable Bag.png" 
+                alt="Eco-friendly product"
+                width="100">
+            </div>
+            <div class="image-box">
+                <!--Product image placeholder-->
+                <img src="../images/Bamboo straw.png" 
+                alt="Eco-friendly product"
+                width="100">
+            </div>
+            <div class="image-box">
+                <!--Product image placeholder-->
+                <img src="../images/Organic soap.png" 
+                alt="Eco-friendly product"
+                width="100">
+            </div>
+        </div>
+        <!--Product preview section ends-->
+
+        <!--Call to action section-->
+        <div class="cta-section">
+            <!--Shop Now button-->
+            <a href="product.html">
+            <!--Inline CSS-->
+            <button style="background-color: green;color: white;">
+                Explore Products
+            </button>
+            </a>
+        </div>
+
+        <!--Information section starts-->
+        <div class="info-section">
+            <div class="why-box">
+            <h2>
+                Why This Store Is Important
+            </h2>
+            <!--Key points-->
+            <ul>
+                <li>
+                   Promotes eco-friendly and sustainable products
+                </li>
+                <li>
+                   Encourages responsible and ethical shopping habits
+                </li>
+                <li>
+                   Supports awareness about reducing environmental impact
+                </li>
+            </ul>
+            </div>
+        </div>
+        <!--Information section ends-->
+
+        <!--Footer section starts-->
+        <div class="footer">
+           <!--Footer menu areas--> 
+           <div class="footer-section">
+            <strong>
+                Contact Info 
+            </strong>
+            <p>
+                Email: support@ecoza.com
+            </p>
+            <p>
+                Phone: +977-XXXXXXXXXX
+            </p>
+           </div>
+           <div class="footer-section">
+            <strong>
+                Quick Links
+            </strong>
+            <p>
+                <a href="index.html">
+                    Home
+                </a><br>
+                <a href="product.html">
+                    Products
+                </a><br>
+                <a href="blog.html">
+                    Blog Section
+                </a><br>
+                <a href="research.html">
+                    Research
+                </a><br>
+                <a href="aboutus.html">
+                    About Us
+                </a><br>
+                <a href="cart.html">
+                    MyCart
+                </a><br>
+            </p>
+           </div>
+           <div class="footer-section">
+            <strong>
+                Social Media 
+            </strong>
+            <p>
+                 📘 Facebook   
+            </p>
+            <p>
+                 📸  Instagram     
+            </p>
+            <p>
+                 🐦 Twitter 
+            </p>
+           </div>
+           <div class="footer-section">
+            Copyright <br> © 2026 Ecoza. All rights reserved. 
+           </div>
+        </div>
+        <!--Footer section ends-->
+
+        <!--Linking JS to HTML-->
+        <script src="../js/script.js">
+
+        </script>
+
+    </body>
+</html>

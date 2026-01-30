@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--This tells the browser that the document is written in HTML5-->
+<html lang="en">
+    <!--This tells that the content is in English-->
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Research
+        </title>
+        <!--Linking external CSS file using relative path-->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <!--Header section starts-->
+        <div class="header">
+            <div class="logo">
+                <img src="../images/Logo.png" alt="Ecoza Logo">
+                Ecoza
+            </div>
+            <!--Navigation menu-->
+            <div class="nav">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="product.html">
+                    Products
+                </a>
+                <a href="blog.html">
+                    Blog
+                </a>
+                <a href="research.html">
+                    Research
+                </a>
+                <a href="aboutus.html">
+                    About Us
+                </a>
+            </div>
+            <!--Search bar and cart icon area-->
+            <div class="header-icons">
+                <!--Search box-->
+                <input type="text" id="searchInput" placeholder="Search Products...">
+                <button onclick="searchProducts()">
+                    Search 
+                </button>
+                <!--Cart icon-->
+               <a href="cart.html">
+                <img src="../images/cart-icon.png" alt="Cart" width="24">
+                </a>
+            </div>
+        </div>
+        <!--Header section ends-->
+
+        <!--Research page heading section-->
+        <div class="main-content compact-header">
+            <h1>
+                Research
+            </h1>
+            <p class="subheading">
+                A comparison of our website design with other existing websites and the learnings gained from them.
+            </p>
+        </div>
+        <div class="main-content"> 
+        <h2>
+                Website Comparison Overview
+        </h2>
+        </div>
+        <!--Research page heading section ends-->
+
+        <!--Research comparison cards-->
+        <div class="research-card">
+            <div class="research-image">
+                <img src="../images/research-1.png" alt="Sustainable Store Logo">
+            </div>
+            <div class="research-text">
+                <div class="research-link">
+                   <a href="https://www.ecosia.org/">
+                        www.ecosia.org
+                   </a>
+                </div>
+                <p class="research-observation">
+                    This website emphasizes sustainability through colors, content, and messaging, which influenced our eco-friendly theme and design choices.
+                </p>
+            </div>
+        </div>
+
+        <div class="research-card">
+            <div class="research-image">
+                <img src="../images/research-2.png" alt="Amazon Logo">
+            </div>
+            <div class="research-text">
+                <div class="research-link">
+                    <a href="https://www.amazon.com/">
+                        www.amazon.com
+                   </a>
+                </div>
+                <p class="research-observation"> 
+                Amazon uses a clean homepage layout with clear navigation and product categories, which helps users easily browse different products.
+                </p>
+            </div>
+        </div>
+
+        <div class="research-card">
+            <div class="research-image">
+                <img src="../images/research-3.png" alt="Daraz Logo">
+            </div>
+            <div class="research-text">
+                <div class="research-link">
+                    <a href="https://www.daraz.com.np/">
+                        www.daraz.com
+                    </a>
+                </div>
+                <p class="research-observation"> 
+                Daraz focuses on product listings with filters and categories. This inspired us to include a simple product layout and filtering structure.
+                </p>
+            </div>
+        </div>
+
+        <!--Research comparison section starts-->
+        <div class="comparison-title">
+            Comparison Summary 
+        </div>
+
+        <div class="comparison-boxes">
+            <!--Similarities section-->
+            <div class="comparison-box">
+                Similarities <br>
+                <ul>
+                <li>
+                   Similar layout structure 
+                </li>
+                <li>
+                   Use of navigation bar at the top 
+                </li>
+                <li>
+                   Product-focused homepage design
+                </li>
+            </ul>
+            </div>
+            <!--Differences Section-->
+            <div class="comparison-box">
+                Differences <br>
+                <ul>
+                <li>
+                   Different color theme
+                </li>
+                <li>
+                   Different content arrangement
+                </li>
+                <li>
+                   Different focus on sustainability information
+                </li>
+            </ul>
+            </div>
+            <!--Improvements section-->
+            <div class="comparison-box">
+                What We Improved <br>
+                <ul>
+                <li>
+                   Simpler and cleaner layout
+                </li>
+                <li>
+                   Better focus on eco-friendly products
+                </li>
+                <li>
+                   Easy navigation for beginners
+                </li>
+            </ul>
+            </div>
+        </div>
+
+            <!--Comparison table section-->
+            <h3>
+                Comparison Table
+            </h3>
+
+            <table cellpadding="10">
+                <tr>
+                    <th>
+                        Website
+                    </th>
+                    <th>
+                        Similarities
+                    </th>
+                    <th>
+                        Differences
+                    </th>
+                    <th>
+                        Improvements Made
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Amazon
+                    </td>
+                    <td>
+                        Product grid, search bar
+                    </td>
+                    <td>
+                        Too complex UI 
+                    </td>
+                    <td>
+                        Simplified layout
+                    </td>
+                </tr>
+                <tr>
+                   <td>
+                        Daraz
+                    </td>
+                    <td>
+                        Categories and filters 
+                    </td>
+                    <td>
+                        Focused on discounts rather than sustainability
+                    </td>
+                    <td>
+                        Added eco-friendly focus with clean product presentation
+                    </td> 
+                </tr>
+                <tr>
+                   <td>
+                        Ecosia 
+                    </td>
+                    <td>
+                        Clean layout, simple navigation 
+                    </td>
+                    <td>
+                        Focuses on search functionality rather than product selling
+                    </td>
+                    <td>
+                        Applied eco-friendly designs 
+                    </td> 
+                </tr>
+            </table>
+        
+        <!--Research comparison section ends-->
+
+        <!--Research summary section-->
+        <div class="info-section">
+            <h2>
+                Summary
+            </h2>
+
+            <p>
+                Through this research, we understood the importance of clean design,
+                simple navigation, and user-friendly layouts. These learnings helped us
+                design our website more effectively.
+            </p>
+        </div>
+        <!--Research summary section ends-->
+
+        <!--Footer section starts-->
+        <div class="footer">
+           <!--Footer menu areas--> 
+           <div class="footer-section">
+            <strong>
+                Contact Info 
+            </strong>
+            <p>
+                Email: support@ecoza.com
+            </p>
+            <p>
+                Phone: +977-XXXXXXXXXX
+            </p>
+           </div>
+           <div class="footer-section">
+            <strong>
+                Quick Links
+            </strong>
+            <p>
+                <a href="index.html">
+                    Home
+                </a><br>
+                <a href="product.html">
+                    Products
+                </a><br>
+                <a href="blog.html">
+                    Blog Section
+                </a><br>
+                <a href="research.html">
+                    Research
+                </a><br>
+                <a href="aboutus.html">
+                    About Us
+                </a><br>
+                <a href="cart.html">
+                    MyCart
+                </a><br>
+            </p>
+           </div>
+           <div class="footer-section">
+            <strong>
+                Social Media 
+            </strong>
+            <p>
+                 📘 Facebook   
+            </p>
+            <p>
+                 📸  Instagram     
+            </p>
+            <p>
+                 🐦 Twitter 
+            </p>
+           </div>
+           <div class="footer-section">
+            Copyright <br> © 2026 Ecoza. All rights reserved. 
+           </div>
+        </div>
+        <!--Footer section ends-->
+
+        <!--Linking JS to HTML-->
+        <script src="../js/script.js">
+
+        </script>
+
+    </body>
+</html>

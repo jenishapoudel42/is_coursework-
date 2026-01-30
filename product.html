@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--This tells the browser that the document is written in HTML5-->
+<html lang="en">
+    <!--This tells that the content is in English-->
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Products
+        </title>
+        <link rel="stylesheet" href="../css/style.css">
+        <!--Internal CSS for product page specific styling-->
+        <style>
+           /* Main heading styling (product page only) */ 
+           h1{
+            color: #2e7d32;
+           }
+        </style>
+    </head>
+    <body data-page="product">
+        <!--Header section starts-->
+        <div class="header">
+            <div class="logo">
+                <img src="../images/Logo.png" alt="Ecoza Logo">
+                Ecoza
+            </div>
+            <!--Navigation menu-->
+            <div class="nav">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="product.html">
+                    Products
+                </a>
+                <a href="blog.html">
+                    Blog
+                </a>
+                <a href="research.html">
+                    Research
+                </a>
+                <a href="aboutus.html">
+                    About Us
+                </a>
+            </div>
+            <!--Search bar and cart icon area-->
+            <div class="header-icons">
+                <!--Search box-->
+                <input type="text" id="searchInput" placeholder="Search Products...">
+                <button onclick="searchProducts()">
+                    Search 
+                </button>
+                <!--Cart icon-->
+                <a href="cart.html">
+                <img src="../images/cart-icon.png" alt="Cart" width="24">
+                </a>
+            </div>
+        </div>
+        <!--Header section ends-->
+
+        <!--Product page layout starts-->
+        <div class="product-layout">
+
+            <!--Filter section (Left side)-->
+            <div class="filter-box">
+                <h3>
+                    Filters
+                </h3>
+                <ul>
+                    <li onclick="filterProducts('all')">
+                        All 
+                    </li>
+                    <li onclick="filterProducts('Reusable')">
+                        Reusable Products
+                    </li>
+                    <li onclick="filterProducts('Personal')">
+                        Personal Hygiene Items
+                    </li>
+                    <li onclick="filterProducts('Household')">
+                        Household Essentials
+                    </li>
+                </ul>
+            </div>
+
+            <!--Product listing section (Center)-->
+            <div class="product-grid">
+
+                <!--Single product-->
+                <div class="product-card image-box" data-category="Household">
+                    <div class="product-image">
+                        <img src="../images/Eco bottle.png" alt="Eco Bottle">
+                    </div>
+                    <h4>
+                        Eco Bottle
+                    </h4>
+                    <p class="price">
+                        <span class="actual-price">
+                            Rs. 800
+                        </span>
+                        <span class="discounted-price">
+                            Rs. 600
+                        </span>
+                    </p>
+                    <button onclick="showProductDetails('Eco Bottle', 'This reusable water bottle is designed to reduce plastic waste and promote a sustainable lifestyle. It is made from durable and safe materials, making it suitable for daily use at home, school, or work. Using this bottle helps minimize the use of single-use plastic bottles.')">
+                        View Details 
+                    </button>
+                    <button onclick="addToCart('Eco Bottle')">
+                        Add to Cart 
+                    </button>
+                </div>
+
+                <!--Repeat image boxes (6 total)-->
+                <div class="product-card image-box" data-category="Personal">
+                    <div class="product-image">
+                        <img src="../images/Bamboo brush.png" alt="Bamboo Brush">
+                    </div>
+                    <h4>
+                        Bamboo Brush
+                    </h4>
+                    <p class="price">
+                            Rs. 250
+                    </p>
+                    <button onclick="showProductDetails('Bamboo Brush', 'The bamboo brush is an eco-friendly alternative to plastic combs. It is biodegradable and made from natural bamboo, which helps reduce environmental pollution. This product supports sustainable personal care habits.')">
+                        View Details 
+                    </button>
+                    <button onclick="addToCart('Bamboo Brush')">
+                        Add to Cart 
+                    </button>
+                </div>
+
+                <div class="product-card image-box" data-category="Reusable">
+                    <div class="product-image">
+                        <img src="../images/Reusable Bag.png" alt="Resuable Shopping Bag">
+                    </div>
+                    <h4>
+                        Reusable Shopping Bag
+                    </h4>
+                    <p class="price">
+                            Rs. 400
+                    </p>
+                    <button onclick="showProductDetails('Reusable Shopping Bag', 'The reusable bag is strong, lightweight, and suitable for regular shopping. It can be reused multiple times, reducing the need for plastic bags. This product promotes responsible and sustainable shopping practices.')">
+                        View Details 
+                    </button>
+                    <button onclick="addToCart('Reusable Shopping Bag')">
+                        Add to Cart 
+                    </button>
+                </div>
+
+                <div class="product-card image-box" data-category="Household">
+                    <div class="product-image">
+                        <img src="../images/Bamboo straw.png" alt="Bamboo Straw">
+                    </div>
+                    <h4>
+                        Bamboo Straw
+                    </h4>
+                    <p class="price">
+                            Rs. 150
+                    </p>
+                    <button onclick="showProductDetails('Bamboo Straw', 'The bamboo straw is a reusable and biodegradable alternative to plastic straws. It can be cleaned and used multiple times, helping to reduce plastic waste. This product supports eco-friendly lifestyle choices.')">
+                        View Details 
+                    </button>
+                    <button onclick="addToCart('Bamboo Straw')">
+                        Add to Cart 
+                    </button>
+                </div>
+
+                <div class="product-card image-box" data-category="Personal">
+                    <div class="product-image">
+                        <img src="../images/Organic soap.png" alt="Organic Soap">
+                    </div>
+                    <h4>
+                        Organic Soap 
+                    </h4>
+                    <p class="price">
+                        <span class="actual-price">
+                            Rs. 300
+                        </span>
+                        <span class="discounted-price">
+                            Rs. 200
+                        </span>
+                    </p>
+                    <button onclick="showProductDetails('Organic Soap', 'The organic soap is made using natural ingredients without harmful chemicals. It is gentle on the skin and safe for the environment. Using organic soap helps reduce water pollution and promotes sustainable personal care.')">
+                        View Details 
+                    </button>
+                    <button onclick="addToCart('Organic Soap')">
+                        Add to Cart 
+                    </button>
+                </div>
+
+                <div class="product-card image-box" data-category="Household">
+                    <div class="product-image">
+                        <img src="../images/Eco cleaner.png" alt="Eco Cleaner">
+                    </div>
+                    <h4>
+                        Eco Cleaner
+                    </h4>
+                    <p class="price">
+                            Rs. 500
+                    </p>
+                    <button onclick="showProductDetails('Eco Cleaner', 'The eco cleaner is made from environmentally safe ingredients and is used for household cleaning. It reduces the use of harsh chemicals and is safer for both users and the environment. This product supports a cleaner and healthier home.')">
+                        View Details 
+                    </button>
+                    <button onclick="addToCart('Eco Cleaner')">
+                        Add to Cart 
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!--Product page layout ends-->
+
+        <!--Why Buy section-->
+        <div class="info-section">
+            <div class="why-box">
+                <h2>
+                    Why Buy From Us ?
+                </h2>
+                <ul>
+                    <li>
+                        100% eco-friendly products
+                    </li>
+                    <li>
+                        Affordable and sustainable choices
+                    </li>
+                    <li>
+                        Trusted by conscious consumers
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Footer section starts-->
+        <div class="footer">
+           <!--Footer menu areas--> 
+           <div class="footer-section">
+            <strong>
+                Contact Info 
+            </strong>
+            <p>
+                Email: support@ecoza.com
+            </p>
+            <p>
+                Phone: +977-XXXXXXXXXX
+            </p>
+           </div>
+           <div class="footer-section">
+            <strong>
+                Quick Links
+            </strong>
+            <p>
+                <a href="index.html">
+                    Home
+                </a><br>
+                <a href="product.html">
+                    Products
+                </a><br>
+                <a href="blog.html">
+                    Blog Section
+                </a><br>
+                <a href="research.html">
+                    Research
+                </a><br>
+                <a href="aboutus.html">
+                    About Us
+                </a><br>
+                <a href="cart.html">
+                    MyCart
+                </a><br>
+            </p>
+           </div>
+           <div class="footer-section">
+            <strong>
+                Social Media 
+            </strong>
+            <p>
+                 📘 Facebook   
+            </p>
+            <p>
+                 📸  Instagram     
+            </p>
+            <p>
+                 🐦 Twitter 
+            </p>
+           </div>
+           <div class="footer-section">
+            Copyright <br> © 2026 Ecoza. All rights reserved. 
+           </div>
+        </div>
+        <!--Footer section ends-->
+
+        <!--Linking JS to HTML-->
+        <script src="../js/script.js">
+
+        </script>
+
+    
+    </body>
+</html>
